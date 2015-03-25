@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "WELCOME TO LEE'S BLOG!"
 date:   2015-03-25 14:12:55
 categories: jekyll update
 ---
