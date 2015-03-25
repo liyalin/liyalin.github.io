@@ -3,8 +3,8 @@ title: Lee's Room
 email: liyalin1991@live.com
 description: > # 牛逼啊.
 baseurl: /
-encoding: utf-8
-url: "http://liyalin.github.io" # the base hostname & protocol for your site
+# encoding: utf-8
+url: "http://liyalin.github.io"
 twitter_username: LIYALIN1991
 github_username:  LIYALIN1991
 
