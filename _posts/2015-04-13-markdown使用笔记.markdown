@@ -3,6 +3,10 @@ title: MarkDown 使用笔记
 date: 2015-04-15 15:19:16
 categories: jekyll testing
 ---
+>
+>
+
+
 ##文字
 样式效果  | 快捷键   |作用    |  写法
 ---      | ---       | --- | ---
@@ -14,24 +18,11 @@ categories: jekyll testing
 ![image](https://sm3lir.cloudimage.io/s/width/34/https://www.gitbook.com/assets/images/logo/128.png?v=6.11.9) |Sihft+Con+I| 图片 |`![图片](xxx.png)`
 
 
+>
+>
+>
 
-
-******
-##线框
-`Hello MarkDowm`     短框  
-
-```
-Hello MarkDown  长框
-Hello MarkDown  长框
-Hello MarkDown  长框
-```
-长框写法 前```  后同
-
-
-
-
-
-##其他
+##富文本
 <del>Hello MarkDown</del>      删除  `<del>Hello</del>`
 
 <mark>Hello MarkDown</mark>    标示 `<mark>Hello</mark>`
@@ -45,12 +36,57 @@ Hello<sup>markdown</sup>       副文本 `Hello<sup>markdown</sup>`
 [**Markdown** preference pane](#markdown-pane).  `[**Markdown** preference pane](#markdown-pane).`
 
 > Hello MarkDown  
- 写法`> Hello MarkDown `
+ 写法`> Hello MarkDown，  “>”符号开头 `
 
+>
+>
+>
 
+##线框
+`Hello MarkDowm`     短框  
 
-##代码
 ```
+Hello MarkDown  长框
+Hello MarkDown  长框
+Hello MarkDown  长框
+```
+长框写法 前```  后同
+
+
+>
+>
+>
+
+
+##列表
+1. Item One
+   1. sub one
+   2. sub two
+   3. sub three
+2. Item Two
+
+* Uno
+* Dos
+* Tres
+
+写法：
+{% highlight python %}
+1. Item One
+   1. sub one
+   2. sub two
+   3. sub three
+2. Item Two
+ * 1.后需要个空格
+ * 只有2个层级
+   #. sub 1
+   #. sub 2
+{% endhighlight %}
+
+>
+>
+>
+##代码
+{% highlight python %}
 -(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *bg=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 30)];
@@ -71,7 +107,10 @@ Hello<sup>markdown</sup>       副文本 `Hello<sup>markdown</sup>`
     [bg addSubview:lbl];
     return bg;
 }
-```
+{% endhighlight %}
+>
+>
+>
 
 
 
