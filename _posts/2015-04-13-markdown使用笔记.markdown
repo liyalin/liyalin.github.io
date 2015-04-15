@@ -43,14 +43,13 @@ Hello<sup>markdown</sup>       副文本 `Hello<sup>markdown</sup>`
 >
 
 ##线框
-`Hello MarkDowm`     短框  
+`Hello MarkDowm`符号 `    
 
 ```
-Hello MarkDown  长框
-Hello MarkDown  长框
-Hello MarkDown  长框
+Hello MarkDown  长框（符号```）
+Hello MarkDown  长框（符号```）
+Hello MarkDown  长框（符号```）
 ```
-长框写法 前```  后同
 
 
 >
