@@ -1,21 +1,31 @@
-name: LIYALIN
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
-
-url: http://liyalin.github.io/
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+name: LEE'S BLOG
+author: Francis Lee
+baseurl: 
+description: theme for jekyll
+github: https://www.github.com/liyalin
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: liyalin1991[at]live.com
+disqus: diqus-liyalin
 encoding: utf-8
-timezone: Asia/Shanghai
+
+##Make sure to edit the above fields, especially for disqus.
 
 
+highlighter: pygments
 markdown: redcarpet
-pygments: true
-paginate: 5
+redcarpet:
+  extensions: ["tables"]
 
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
