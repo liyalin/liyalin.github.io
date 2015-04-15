@@ -16,6 +16,6 @@ navigation:
  - title: Home
    url: /index.html
  - title: About
-   url: /about.md
+   url: /about
  - title: Contact
-   url: /contact.md
+   url: /contact
