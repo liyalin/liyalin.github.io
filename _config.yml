@@ -1,15 +1,21 @@
-# Site settings
-title: Lee's Room
-email: liyalin1991@live.com
-description: > # 牛逼啊.
-baseurl: /
+name: LIYALIN
+description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+
+url: http://liyalin.github.io/
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 encoding: utf-8
-url: "http://liyalin.github.io"
-twitter_username: LIYALIN1991
-github_username:  LIYALIN1991
 timezone: Asia/Shanghai
 
-# Build settings
-# markdown:
 
-permalink: /:categories/:year/:month/:day/:title
+markdown: redcarpet
+pygments: true
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about.md
+ - title: Contact
+   url: /contact.md
