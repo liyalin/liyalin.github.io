@@ -16,7 +16,7 @@ categories: jekyll testing
 ~~Hello~~ | Com + U  |删除  |`~~Hello~~`
 [Link](http://sidechef.com)| Shift+Con+U |链接|`[标题](xxx.com)`
 ![image](https://sm3lir.cloudimage.io/s/width/34/https://www.gitbook.com/assets/images/logo/128.png?v=6.11.9) |Sihft+Con+I| 图片 |`![图片](xxx.png)`
-
+![本地头像]({{ site.baseurl }}/images/icon_57.png)|同上|本地图片|`![img]({{site.baseurl}}/xx/xx.png)` 
 
 >
 >
@@ -109,9 +109,11 @@ Hello MarkDown  长框（符号```）
     return bg;
 }
 {% endhighlight %}
->
->
->
 
 
+>
 
+>
+
+##更多
+[Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/#img)
