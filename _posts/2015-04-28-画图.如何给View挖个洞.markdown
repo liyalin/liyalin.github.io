@@ -1,0 +1,39 @@
+---
+title: 画图 如何给View画个洞
+date: 2015-04-28
+categories: iOS
+---
+>
+>
+>
+
+#如何给View挖个洞
+```Objective-C代码
+- (void)overlayClipping :(UIView *)view
+{
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    CGMutablePathRef path = CGPathCreateMutable();
+    // Left side of the ratio view
+    CGPathAddRect(path, nil, CGRectMake(0, 0,
+                                        self.ratioView.frame.origin.x,
+                                        self.overlayView.frame.size.height));
+    // Right side of the ratio view
+    CGPathAddRect(path, nil, CGRectMake(
+                                        self.ratioView.frame.origin.x + self.ratioView.frame.size.width,
+                                        0,
+                                        self.overlayView.frame.size.width - self.ratioView.frame.origin.x - self.ratioView.frame.size.width,
+                                        self.overlayView.frame.size.height));
+    // Top side of the ratio view
+    CGPathAddRect(path, nil, CGRectMake(0, 0,
+                                        self.overlayView.frame.size.width,
+                                        self.ratioView.frame.origin.y));
+    // Bottom side of the ratio view
+    CGPathAddRect(path, nil, CGRectMake(0,
+                                        self.ratioView.frame.origin.y + self.ratioView.frame.size.height,
+                                        self.overlayView.frame.size.width,
+                                        self.overlayView.frame.size.height - self.ratioView.frame.origin.y + self.ratioView.frame.size.height));
+    maskLayer.path = path;
+    view.layer.mask = maskLayer;
+    CGPathRelease(path);
+}
+```
